@@ -1,0 +1,161 @@
+
+
+         <!DOCTYPE html> <!--Declaracion de tipo de documento-->
+ <html lang="es"> <!--Elemento raiz-->
+  <head> <!--Contiene metadatos y enlaces a recursos externos--></head>
+   <meta charset="UTF-8"> <!--Establece la codificacion de caracteres-->
+    <meta name="Viewport" content="Width=device-width, initial-scale=1.0">
+     <title>Mas que una mascota</title>
+      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="entrenarlo.css">
+    <body>
+
+        <header>   
+
+                  <div class="container">
+             <center><img src="mascotaa.png" alt="mascotaa yo" width="600"></center>
+
+            <nav>
+             <ul>
+                 <li><a href="¿Porque tener una mascota en casa.html.html">¿Porqué tener una mascota en casa?</a></li>
+                <li><a href="Beneficios.html.html">Beneficios</a></li>
+                <li><a href="Como educar a tu mascota.html">¿Cómo educarlo?</a></li>                
+                <li><a href=" mas informacion.html">Más información</a></li></br>
+            </ul>
+        </nav>
+         </div>
+        </header>
+         <br>        
+              
+               <MARQUEE  DIRECTION=RIGHT BEHAVIOR=SCROLL SCROOLAMOUNT=10 SCROLLDELAY=50><FONT COLOR="#6c5ce7"> HAZ CLICK EN LA PANTALLA Y TE SOLPRENDERAS❤ </FONT></MARQUEE>  
+
+    <div class="pet-container">
+        <div class="pet-card">
+            <div class="pet-header dog-header">
+                <div class="pet-icon">
+                    <i class="fas fa-dog"></i>
+                  
+            
+                </div>
+                <h2>Educación Canina</h2> 
+            </div>
+            <div class="pet-content">
+                <p>Los perros son animales sociales que responden mejor al refuerzo positivo y la consistencia. Aquí tienes algunos principios fundamentales:</p>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-bone"></i> Comunicación clara
+                    </div>
+                    <p>Usa comandos simples y consistentes. Premia inmediatamente los comportamientos deseados con caricias, palabras amables o pequeños premios.</p>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-clock"></i> Rutinas
+                    </div>
+                    <p>Establece horarios fijos para paseos, comidas y descanso. Los perros prosperan con la predictibilidad y esto reduce su ansiedad.</p>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-hands-helping"></i> Socialización
+                    </div>
+                    <p>Presenta a tu perro gradualmente a diferentes personas, animales y entornos durante sus primeros meses para desarrollar su confianza.</p>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-brain"></i> Estimulación mental
+                    </div>
+                    <p>Incorpora juegos de olfato y juguetes interactivos para mantener su mente activa y prevenir comportamientos destructivos por aburrimiento.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pet-card">
+            <div class="pet-header cat-header">
+                <div class="pet-icon">
+                    <i class="fas fa-cat"></i>
+                </div>
+                <h2>Educación Felina</h2>
+            </div>
+            <div class="pet-content">
+                <p>Los gatos son independientes pero pueden aprender mediante refuerzo positivo y respetando sus límites. Considera estos aspectos:</p>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-paw"></i> Ambiente enriquecido
+                    </div>
+                    <p>Proporciona rascadores, plataformas elevadas y escondites. Los gatos necesitan expresar sus comportamientos naturales como trepar y rascar.</p>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-toilet"></i> Arena limpia
+                    </div>
+                    <p>Mantén el arenero impecable y en un lugar tranquilo. Los gatos pueden rechazar cajas sucias o en áreas con mucho tráfico.</p>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-hand-peace"></i> Respeto mutuo
+                    </div>
+                    <p>No fuerces la interacción. Deja que el gato inicie el contacto y aprende a reconocer sus señales de incomodidad o estrés.</p>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">
+                        <i class="fas fa-feather-alt"></i> Juego adecuado
+                    </div>
+                    <p>Usa juguetes que simulen la caza (plumas, láseres) pero siempre termina con una "presa" tangible para evitar frustración.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p><u>Recuerda </u><br>Cada mascota es única. Adapta estos consejos  y necesidades a tu compañero peludo.</p>
+        <p>Educar con amor crea vínculos que duran toda la vida <span class="heart">❤</span></p>
+    </footer>
+    
+    <script>
+        // Efecto de corazones flotantes al hacer clic
+        document.addEventListener('click', function(e) {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤';
+            heart.style.position = 'absolute';
+            heart.style.left = e.clientX + 'px';
+            heart.style.top = e.clientY + 'px';
+            heart.style.color = `hsl(${Math.random() * 60 + 330}, 100%, 70%)`;
+            heart.style.fontSize = `${Math.random() * 20 + 10}px`;
+            heart.style.pointerEvents = 'none';
+            heart.style.animation = 'float 3s ease-out forwards';
+            
+            document.body.appendChild(heart);
+            
+            // Crear animación CSS dinámica
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes float {
+                    0% {
+                        transform: translate(0, 0) rotate(0deg);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translate(${Math.random() * 100 - 50}px, -100px) rotate(360deg);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Eliminar después de la animación
+            setTimeout(() => {
+                heart.remove();
+                style.remove();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
+

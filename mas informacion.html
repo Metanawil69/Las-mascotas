@@ -1,0 +1,170 @@
+<!DOCTYPE html> <!--Declaracion de tipo de documento-->
+ <html lang="es"> <!--Elemento raiz-->
+  <head> <!--Contiene metadatos y enlaces a recursos externos--></head>
+   <meta charset="UTF-8"> <!--Establece la codificacion de caracteres-->
+    <meta name="Viewport" content="Width=device-width, initial-scale=1.0">
+     <title>Mas que una mascota</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet"  href="informacion.css">
+         </head>
+    <body>
+
+
+        <header>           
+                  <div class="container"> 
+
+            <center> <img src="contactos.png" alt="contactos yo" width="700"></center>                     
+         
+             
+           
+           
+            <nav>
+             <ul>
+              <br>
+                <li><a href="¿Porque tener una mascota en casa.html.html">¿Porqué tener una mascota en casa?</a></li>
+                <li><a href="Beneficios.html.html">Beneficios</a></li>
+                <li><a href="Como educar a tu mascota.html">¿Cómo educarlo?</a></li>                
+                <li><a href=" mas informacion.html">Más información</a></li></br>
+            </ul>
+        </nav>
+         </div>
+                 </header>
+
+
+        <main class="container">
+         <section>
+<body>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte. Envíanos un mensaje o contáctanos directamente.</p>
+        </div>
+        
+        <div class="contact-card">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Teléfono (opcional)</label>
+                    <input type="tel" id="phone" class="form-control">
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Enviar mensaje
+                </button>
+                
+                <div id="successMessage" class="success-message">
+                    ¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.
+                </div>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                    <h3><center>Contactanos por medio de:</center></h3>
+                    
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Teléfono</h3>
+                    <p>+57 3175328029</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Correo electrónico</h3>
+                    <p>Mascolamg@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Horario de atención</h3>
+                    <p>Lunes a Viernes: 9:00 AM - 10:00 PM</p>
+                    <p>Sábados: 10:00 AM- 1:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío del formulario
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'block';
+                this.reset();
+                
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 5000);
+            }, 1000);
+        });
+        
+        // Efecto de onda al hacer clic en los botones
+        document.querySelectorAll('.btn-submit, .social-link').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const x = e.clientX - e.target.getBoundingClientRect().left;
+                const y = e.clientY - e.target.getBoundingClientRect().top;
+                
+                const ripple = document.createElement('span');
+                ripple.className = 'ripple';
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

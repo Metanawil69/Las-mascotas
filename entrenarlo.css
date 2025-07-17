@@ -1,0 +1,173 @@
+
+
+        :root { /*<!--color del encabezado--!>*/
+            --primary: #d6b1eb; /* lila */
+            --secondary: #87CEFA; /* Azul cielo */
+            --accent: #8951e7; /* morado oscuro */ /*<!--color letra cuadros con linea--!>*/
+            --text: #5A4A42; /* Marrón cálido  color  encabezado abajo y letras del texto*/
+            --light: #FFF9F5; /* Blanco crema */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;/*<!--color de las letra titulo--!>*/
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 /*<!--h1 es para los titulos--!>*/
+        {
+
+            text-añign: center;/*<!--Alia el texto--!>*/
+            margin-bottom: 10px;/*<!--margen a izquierda--!>*/
+        }
+        nav ul /*<!--para el menu--!>*/
+        {
+            display: flex; /*<!--Activa el modo flexbox--!>*/
+            justify-content: left right;/*<!--Alinea elementos en el eje principal--!>*/
+            list-style:none;/*<!--cambia el estilo--!>*/
+            gap:  60px;/*<!--ceparacion entre menus --!>*/
+            font-size: 20PX/*<!TAMAÑO DE LETRA--!>*/
+        }
+        nav a: hover
+        {
+            color:black;/*<!--cambia el color del menu--!>*/
+            text-decoration:none;
+            font-weight:bold;
+            background-color: yellow;
+            color: black;
+        }
+        nav a:hover
+        {
+            text-decoration:underline;
+                  }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .pet-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pet-card {
+            background: white;/*<!--cambia el color de los cuadros de adentro--!>*/
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .pet-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pet-header {/*<!--cuadros de texto--!>*/
+            padding: 1.5rem;
+            text-align: center;
+            color: white;/*<!--color de letra de los cuadros--!>*/
+            position: relative;
+        }
+        
+        .dog-header {
+            background: linear-gradient(to right, var(--primary), #7bd8e9);/*<!--cambia el color del cuadro de mascotas--!>*/
+        }
+        
+        .cat-header {
+            background: linear-gradient(to right, var(--secondary), #7bd8e9);/*<!--cambia el color del cuadro de gatos--!>*/
+        }
+        
+        .pet-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .pet-content {
+            padding: 1.5rem;
+        }
+        
+        .tip {
+            background: var(--light);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .tip-title {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        footer { /*<!--texto encabezado de abajo--!>*/
+            text-align: center;
+            padding: 2rem;
+            background: var(--text);
+            color: white;/*<!--coloor de las letras barra de anajo--!>*/
+            margin-top: 2rem;
+        }
+        
+        .heart {
+            color: var(--primary);
+            animation: pulse 1.5s infinite;
+            display: inline-block;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .pet-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+        </header>

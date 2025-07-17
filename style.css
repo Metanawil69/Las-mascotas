@@ -1,0 +1,113 @@
+
+       	/*reset basico*/
+       	* {
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+       	}
+       	/*estilos generales*/
+       	
+
+        body
+       	 {
+    
+       	font-family:Arial;
+       	background-color:#fdeaf2;
+         color: black;/*<!--cambia el tipo de color--!>*/
+       	line-height: 1.6;
+        }
+        .container
+        {
+        	width:900%; /*<!--limita el ancho del contenido para que no ocupe toda la pantalla-->*/
+        	max-width:1200px;/*<!--centra el contenido horizontalmente-->*/
+        	margin:auto/*<!--tamaño de las pantallas--!>*/
+        }
+        /*header*/
+        header /*<!--cabezera--!<*/ /*<!--efecto transparente--!<*/
+        {
+        	background: rgba(   251, 216, 236);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            /*<!position: fixed;--iNMOVILIZAR TITULO--!<*/
+            top: 0;
+            left: 0;
+            width: 100%;/*<!--tamaño del canbezado para que quede deacuerdo a la pagina -!<*/
+            z-index: 1000;
+            padding: 0.3rem 3%;/*<!--Tamaño del encabezado y porcentaje del encabezado para mover a la izquierda-!<*/
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid rgba(255, 255, 255, 0.3);/*<!--grosor y color de la linea de abajo del encabezado-!<*/
+            overflow: hidden;
+            }
+
+        header h1 /*<!--h1 es para los titulos--!>*/
+        {
+
+        	text-añign: center;/*<!--Alia el texto--!>*/
+        	margin-bottom: 10px;/*<!--margen a izquierda--!>*/
+        }
+        nav ul /*<!--para el menu--!>*/
+        {
+        	display: flex; /*<!--Activa el modo flexbox--!>*/
+        	justify-content: left right;/*<!--Alinea elementos en el eje principal--!>*/
+        	list-style:none;/*<!--cambia el estilo--!>*/
+        	gap:  60px;/*<!--ceparacion entre menus --!>*/
+            font-size: 20PX/*<!TAMAÑO DE LETRA--!>*/
+        }
+        nav a: hover
+        {
+        	color:black;/*<!--cambia el color del menu--!>*/
+        	text-decoration:none;
+        	font-weight:bold;
+            background-color: yellow;
+            color: black;
+        }
+        nav a:hover
+        {
+        	text-decoration:underline;
+                  }
+        /* Main Layout*/
+        main 
+        {
+        	display:flex;
+        	flex-wrap:wrap;
+        	margin-top: 30px;  
+        	gap: 50px;/*<!--espacio entre los bloques--!>*/
+
+
+       
+        /*Article*/
+        article
+        {
+        	background: #ffesf0;/*<!--color del cuadro donde esta escrito los articulos--!>*/
+        	padding: 10px;/*<!--tamaño de los cuadros de texto (articulo1,articulo2)--!>*/
+        	border-radius: 8px;/*<!--bordes del texto los redondea--!>*/
+        	margin-bottom: 20px;/*<!--ceparacion entre articulos--!>*/
+        	box-shadow: 0 0 8px rgba(0,0,0,0,.1)/*<!----!>*/
+        }
+        
+        article h3 
+        {
+        	margin-bottom: 10px;/*<!--ceparacion del titulo y el texto--!>*/
+        }
+        /*footer*/
+        footer
+        {
+        	background-color: #1f2937;/*<!--Cambia el color de la barra de abajo (el pie de pagina)--!>*/
+        	color: #white;/*<!--cambia el color de las letras del pie de pagina(es mejor dejarlo del mismo color que el pie de pagina)--!>*/
+        	text-align: center;/*<!--centra el texto del pie de pagina--!>*/
+        	padding: 20px 0;/*<!--Tamaño de la barra de encabezado--!>*/
+        	margin-top: 100px;/*<!--cepara el encabezado de los cuadros de articulos--!>*/
+        }
+
+        /*responsivo*/
+        @media  (max-width: 768px)
+        {
+        	main
+        {
+        	flex-direction: column;
+        }
+        }
+
+
+
+

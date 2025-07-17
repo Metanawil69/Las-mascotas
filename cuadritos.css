@@ -1,0 +1,85 @@
+
+        /* Lista de beneficios en rectángulos con efecto 3D */
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            perspective: 1200px;
+        }
+
+        .benefit-card {
+            background: fe7f7;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow:
+                0 10px 20px rgba(50, 50, 93, 0.25),
+                0 6px 6px rgba(0, 0, 0, 0.22);
+            cursor: default;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transform-style: preserve-3d;
+            will-change: transform, box-shadow;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            user-select: none;
+        }
+
+        .benefit-card:hover,
+        .benefit-card:focus-visible {
+            transform: translateZ(30px) rotateX(7deg) rotateY(-7deg) scale(1.06);
+            box-shadow:
+                0 20px 40px rgba(50, 50, 93, 0.35),
+                0 12px 12px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            color: #976bee;
+            align-self: flex-start;
+            user-select: none;
+            transform: translateZ(60px);
+        }
+
+        .material-icons.md-36 {
+            font-size: 3rem;
+            color: #976bee;
+            user-select: none;
+            transform: translateZ(60px);
+        }  /*color de huellas*/
+        
+        .benefit-title { /*color de letras*/
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #be6bee;
+            transform: translateZ(40px);
+        }
+
+        .benefit-description {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #334155;
+            flex-grow: 1;
+            transform: translateZ(20px);
+        }
+
+        /* Responsive para pantallas pequeñas */
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .benefits-list {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+        </header>
+        
